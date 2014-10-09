@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<stringname="app_name">GeoQuiz</string>
+<stringname="hello_world">Hello, world!</string>
+<stringname="question_text">Constantinople is the largest city in Turkey.</string>
+<stringname="true_button">True</string>
+<stringname="false_button">False</string>
+<stringname="menu_settings">Settings</string>
+
+
+</resources>
