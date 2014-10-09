@@ -29,7 +29,6 @@ android:layout_height="wrap_content"
 android:text="@string/next_button" 
 android:drawableRight="@drawable/right_arrow"
 android:drawablePadding="4dp"
-
 />
 </LinearLayout>
 </LinearLayout>
