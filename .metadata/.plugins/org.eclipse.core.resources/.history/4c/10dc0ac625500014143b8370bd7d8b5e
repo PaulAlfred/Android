@@ -56,9 +56,7 @@ public class QuizActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_quiz);
-        
         mQuestionTextView = (TextView)findViewById(R.id.textview);
-        
         mTrueButton = (Button)findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
 			
