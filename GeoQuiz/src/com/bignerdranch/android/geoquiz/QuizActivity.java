@@ -1,7 +1,9 @@
 package com.bignerdranch.android.geoquiz;
 
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -58,11 +60,17 @@ public class QuizActivity extends ActionBarActivity {
 		Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
 	}
 	
+	@TargetApi(11)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_quiz);
+        
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB){
+        	android.app.ActionBar actionBar = getActionBar();
+        	actionBar.setSubtitle("Bodies of Water");
+        }
         
         mQuestionTextView = (TextView)findViewById(R.id.textview);
         
